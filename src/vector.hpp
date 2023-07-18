@@ -1,13 +1,15 @@
 #pragma once
+#include <cmath>
 
 struct  Vec2f {
-  Vec2f(double arg_x, double arg_y): x(arg_x), y(arg_y);
+  Vec2f(){};
+  Vec2f(double arg_x, double arg_y): x(arg_x), y(arg_y){};
 
   double x = 0.0;
   double y = 0.0;
 
   double  lenght() {
-    std::sqrt(x * x + y * y);
+    return (std::sqrt(x * x + y * y));
   }
 
   Vec2f& operator+=(const Vec2f& rhs) {
@@ -46,12 +48,11 @@ struct  Vec2f {
 
   friend Vec2f operator*(Vec2f lhs, const double rhs) {
     lhs *= rhs;
-    return (*lhs);
+    return (lhs);
   }
 
   friend Vec2f operator/(Vec2f lhs, const double rhs) {
     lhs /= rhs;
-    return (*lhs);
+    return (lhs);
   }
-};
 };

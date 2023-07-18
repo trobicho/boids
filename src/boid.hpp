@@ -1,5 +1,4 @@
 #pragma once
-#include <math>
 #include "vector.hpp"
 
 struct  Boid {
