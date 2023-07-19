@@ -28,6 +28,7 @@ endif
 
 SRCS_NAME	=	main.cpp \
 				quadtree.cpp \
+				boid.cpp \
 
 HDRS_NAME	=	boid.hpp \
 				quadtree.hpp \
